@@ -11,7 +11,7 @@ handlers = [
 logger = logging.getLogger(__name__)
 
 AIDEVS_APIKEY = os.getenv("AIDEVS_APIKEY")
-AIDEVS_PREFIX = os.getenv("AIDEVS_PREFIX", "https://tasks.aidevs.pl/")
+AIDEVS_PREFIX = "https://tasks.aidevs.pl/"
 URL_TOKEN_PREFIX = urljoin(AIDEVS_PREFIX, "token/")
 URL_TASK_PREFIX = urljoin(AIDEVS_PREFIX, "task/")
 URL_ANSWER_PREFIX = urljoin(AIDEVS_PREFIX, "answer/")
